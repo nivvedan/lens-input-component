@@ -1,0 +1,17 @@
+{
+  "name": "lens-input-component",
+  "version": "0.0.0",
+  "keywords": "lenses, polymer, web-components",
+  "main": "lens-input-component.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "webcomponentsjs": "~0.7.15"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^1.4.2"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.2",
+    "polymer": "^1.1.2"
+  }
+}

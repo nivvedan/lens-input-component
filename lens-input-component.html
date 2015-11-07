@@ -1,0 +1,58 @@
+<link rel="import" href="../polymer/polymer.html"> 
+<!--
+A Lenses component for input
+
+##### Example
+
+    <lens-input-component></lens-input-component>
+
+@element lens-input-component
+@blurb A Thelma component
+@status alpha
+@author Nivvedan S
+@homepage http://nivvedan.github.io/lens-input-component
+-->
+
+<dom-module id="lens-input-component">
+
+  <template>
+    <link rel="stylesheet" href="lens-input-component.css">
+    <div class="lens-container lens-input">
+	<label class="label">label</label>
+    	<input type="text">		
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'lens-input-component',
+      /**
+       * Output data
+       *
+       * @property output
+       * @type object
+       * @default undefined
+       */
+      output: undefined,
+
+      // Observe changes on below attributes and trigger _calculateOutput() when changed
+      observe: {
+        // nameOfAttribute: "_calculateOutput",
+      },
+
+      ready: function () {
+        // Ready is a lifecycle callback.
+        // You can do setup work in here.
+        // More info: http://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+      },
+
+      _calculateOutput: function() {
+        // calculate new output here
+      },
+
+      outputChanged: function(){
+        this.fire('lens-output-changed', this);
+      }
+
+    });
+  </script>
+</dom-module>
